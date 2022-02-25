@@ -1,0 +1,18 @@
+:host{
+    max-width: 325px;
+    display: block;
+}
+
+p.Description__c {
+  min-height:60px;
+}
+
+img .movie{
+    height:200px;
+    border-radius: 4px;
+    border: 1px solid var(--lwc-colorBorder, #ff006a);
+}
+
+.align-right{
+    float: right;
+}

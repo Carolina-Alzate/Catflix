@@ -1,0 +1,24 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-24-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card class="feature-card slds-float_left slds-size_3-of-6" title={movie.Name} icon-name="standard:video">
+        <lightning-button label="View Details" slot="actions"></lightning-button>
+        <!--Body start-->
+        <p class="slds-var-p-horizontal_small slds-var-m-left_xx-small">
+            {movie.Description__c}
+        </p>
+        <img 
+        class="movie "
+        src={movie.Image_Url__c}
+        alt={movie.name}
+        />
+        <p class="slds-var-p-horizontal_small">{movie.Format__c}</p>
+        <!--Body end-->
+    </lightning-card>
+
+</template>
